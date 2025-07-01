@@ -5,8 +5,10 @@ import { supabase } from "../lib/supabase"
 import { AuthProvider } from "../contexts/AuthContext"
 import { PaperProvider } from "react-native-paper"
 import { StatusBar } from "expo-status-bar"
+import { useFrameworkReady } from '@/hooks/useFrameworkReady'
 
 export default function RootLayout() {
+  useFrameworkReady();
   const [session, setSession] = useState<Session | null>(null)
   const [loading, setLoading] = useState(true)
 
