@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { View, StyleSheet, Alert } from "react-native"
 import { TextInput, Button, Text, Card } from "react-native-paper"

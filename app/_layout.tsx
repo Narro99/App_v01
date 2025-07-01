@@ -1,5 +1,3 @@
-"use client"
-
 import { useEffect, useState } from "react"
 import { Stack } from "expo-router"
 import type { Session } from "@supabase/supabase-js"
@@ -24,7 +22,7 @@ export default function RootLayout() {
   }, [])
 
   if (loading) {
-    return null // O un componente de loading
+    return null
   }
 
   return (
